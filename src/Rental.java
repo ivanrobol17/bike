@@ -29,7 +29,7 @@ public class Rental {
                 ret = availableBikes.get(i);
             }
             i++;
-        } while (i < availableBikes.size() && ret != null);
+        } while (i < availableBikes.size() && ret == null);
         return ret;
     }
 
@@ -41,7 +41,7 @@ public class Rental {
                 ret = rentedBikes.get(i);
             }
             i++;
-        } while (i < rentedBikes.size() && ret != null);
+        } while (i < rentedBikes.size() && ret == null);
         return ret;
     }
 
